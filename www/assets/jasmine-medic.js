@@ -102,6 +102,8 @@ jasmineRequire.MedicReporter = function (j$) {
         };
 
         this.postTests = function (json) {
+            console.log('test results:\n' + JSON.stringify(json));
+
             console.log('posting tests');
 
             var xhr = new XMLHttpRequest();
